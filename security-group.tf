@@ -4,7 +4,7 @@ resource "aws_security_group" "pub-sg" {
   vpc_id      = var.VPC_ID
 
   ingress {
-    description      = "TCP from VPC"
+    description      = "HTTPS"
     from_port        = var.PUB_PORT
     to_port          = var.PUB_PORT
     protocol         = "tcp"
@@ -30,7 +30,7 @@ resource "aws_security_group" "pri-sg" {
   vpc_id      = var.VPC_ID
 
   ingress {
-    description      = "TCP from VPC"
+    description      = "HTTP"
     from_port        = var.PRI_PORT
     to_port          = var.PRI_PORT
     protocol         = "tcp"
