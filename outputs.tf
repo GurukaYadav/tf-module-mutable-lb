@@ -5,3 +5,7 @@ output "PUBLIC_LB_ARN" {
 output "PRIVATE_LB_ARN" {
   value = aws_lb.private.arn
 }
+
+output "PRIVATE_LB_DNS_NAME" {
+  value = aws_lb.private.dns_name
+}
