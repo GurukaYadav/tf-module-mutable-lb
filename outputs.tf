@@ -10,6 +10,6 @@ output "PRIVATE_LB_DNS_NAME" {
   value = aws_lb.private.dns_name
 }
 
-output "PRIVATE_LISTNER_ARN" {
+output "PRIVATE_LISTENER_ARN" {
   value = aws_lb_listener.backend.arn
 }
